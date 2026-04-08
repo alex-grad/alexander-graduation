@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,13 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alexander Bittar - Graduation 2026</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -26,15 +23,13 @@
       display: block;
     }
 
-    h1, h2, h3, p {
-      margin: 0;
-    }
+    h1, h2, h3, p { margin: 0; }
 
     .hero {
       position: relative;
       min-height: 100vh;
       background:
-        linear-gradient(rgba(8, 20, 40, 0.45), rgba(8, 20, 40, 0.55)),
+        linear-gradient(rgba(8, 20, 40, 0.38), rgba(8, 20, 40, 0.52)),
         url("COVER 1.jpg") center center / cover no-repeat;
       display: flex;
       align-items: center;
@@ -46,7 +41,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(to bottom, rgba(0,0,0,0.08), rgba(0,0,0,0.28));
+      background: linear-gradient(to bottom, rgba(0,0,0,0.06), rgba(0,0,0,0.22));
       pointer-events: none;
     }
 
@@ -123,13 +118,8 @@
       text-align: center;
     }
 
-    .section.alt {
-      background: #ffffff;
-    }
-
-    .section.gold {
-      background: #f2ebde;
-    }
+    .section.alt { background: #ffffff; }
+    .section.gold { background: #f2ebde; }
 
     .container {
       max-width: 1120px;
@@ -157,21 +147,10 @@
       gap: 22px;
     }
 
-    .grid-2 {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .grid-3 {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .grid-4 {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-
-    .image-grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
+    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .image-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
     .photo-card {
       background: white;
@@ -192,6 +171,14 @@
       width: 100%;
       height: 320px;
       object-fit: cover;
+      object-position: center;
+    }
+
+    .img-top { object-position: center top !important; }
+    .img-contain {
+      object-fit: contain !important;
+      background: #fff;
+      padding: 10px;
     }
 
     .photo-text {
@@ -213,6 +200,7 @@
       width: 100%;
       height: 265px;
       object-fit: cover;
+      object-position: center;
       border-radius: 16px;
       box-shadow: 0 8px 22px rgba(0,0,0,0.08);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -221,6 +209,15 @@
     .plain-gallery img:hover {
       transform: scale(1.015);
       box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+    }
+
+    .champion-fix { object-position: center top !important; }
+    .proud-fix { object-position: center top !important; }
+    .room-fix {
+      object-fit: contain !important;
+      background: #fff;
+      padding: 10px;
+      height: 280px !important;
     }
 
     .message-box {
@@ -265,10 +262,6 @@
     }
 
     @media (max-width: 980px) {
-      .hero {
-        background-position: center center;
-      }
-
       .hero-inner {
         grid-template-columns: 1fr;
         text-align: center;
@@ -286,14 +279,8 @@
         margin: 0 auto;
       }
 
-      .grid-4 {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .grid-3,
-      .image-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
+      .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .grid-3, .image-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
 
     @media (max-width: 640px) {
@@ -306,21 +293,11 @@
         width: min(290px, 88%);
       }
 
-      .hero-text h1 {
-        font-size: 2.25rem;
-      }
+      .hero-text h1 { font-size: 2.25rem; }
+      .hero-text h2 { font-size: 1.15rem; }
+      .hero-text h3 { font-size: 1rem; }
 
-      .hero-text h2 {
-        font-size: 1.15rem;
-      }
-
-      .hero-text h3 {
-        font-size: 1rem;
-      }
-
-      .section {
-        padding: 62px 16px;
-      }
+      .section { padding: 62px 16px; }
 
       .grid-2,
       .grid-3,
@@ -332,6 +309,10 @@
       .photo-card img,
       .plain-gallery img {
         height: 240px;
+      }
+
+      .room-fix {
+        height: 230px !important;
       }
     }
   </style>
@@ -401,7 +382,7 @@
             <p>
               From those early classroom days to this precious graduation moment, each step
               helped shape the determined and remarkable young man you would become.
-              Te amo, Atte. Mins.
+              I love you.
             </p>
           </div>
         </div>
@@ -430,7 +411,7 @@
 
       <div class="grid-3">
         <div class="photo-card">
-          <img src="HIGH SCHOOL GRAD 1.jpg" alt="High school graduation">
+          <img src="HIGH SCHOOL GRAD 1.jpg" alt="High school graduation" class="proud-fix">
           <div class="photo-text">
             <h3>A Proud Moment</h3>
             <p>
@@ -472,28 +453,6 @@
             </p>
           </div>
         </div>
-
-        <div class="photo-card">
-          <img src="AWARDS 1.jpg" alt="Award 1">
-          <div class="photo-text">
-            <h3>Recognition</h3>
-            <p>
-              Every distinction earned along the way became another reminder of your talent,
-              your discipline, and the strength of your character.
-            </p>
-          </div>
-        </div>
-
-        <div class="photo-card">
-          <img src="AWARDS 2.jpg" alt="Award 2">
-          <div class="photo-text">
-            <h3>Excellence</h3>
-            <p>
-              These moments reflect the effort, consistency, and purpose that carried you
-              from one milestone to the next.
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -506,25 +465,35 @@
         entering a new world of growth, challenge, purpose, and unforgettable memories.
       </p>
 
-      <div class="grid-2">
+      <div class="grid-3">
         <div class="photo-card">
-          <img src="FISRT DAY SNOW ND.jpg" alt="First day at Notre Dame">
+          <img src="alex, elias.png" alt="Alex and Elias">
           <div class="photo-text">
-            <h3>First Days at Notre Dame</h3>
+            <h3>Meaningful Connections</h3>
             <p>
-              A new place, new weather, new challenges — and the beginning of four years
-              that would shape your mind, your heart, and your future.
+              The people you meet along the way help make the journey richer, warmer, and unforgettable.
             </p>
           </div>
         </div>
 
         <div class="photo-card">
-          <img src="room first year.jpg" alt="First year room">
+          <img src="yolis y alex.png" alt="Yolis and Alex">
+          <div class="photo-text">
+            <h3>Special Memories</h3>
+            <p>
+              Every smile captured here is a reminder of love, support, and joyful moments shared.
+              Mi niño bellos, Yolenis Bottaro.
+            </p>
+          </div>
+        </div>
+
+        <div class="photo-card">
+          <img src="room first year.jpg" alt="First year room" class="room-fix">
           <div class="photo-text">
             <h3>First-Year Memories</h3>
             <p>
-              This room held late nights, new friendships, dreams for the future, and the
-              first memories of a life-changing college experience.
+              This was your first room at Notre Dame — the place where a new chapter began,
+              where dreams grew, friendships started, and Room 106 became part of your story.
             </p>
           </div>
         </div>
@@ -543,8 +512,6 @@
       <div class="image-grid plain-gallery">
         <img src="ND DOME.jpg" alt="Notre Dame Dome">
         <img src="ND KEAUGH HALL.jpg" alt="Keough Hall">
-        <img src="ND EMBLEM HALL.png" alt="Hall emblem">
-        <img src="HALL 1.jpg" alt="Hall life">
         <img src="ND GOTTO OF OUR LADY OF LOURDES.jpg" alt="Grotto">
         <img src="ND TOUCH JESUS.jpg" alt="Touchdown Jesus">
       </div>
@@ -604,22 +571,23 @@
         </div>
 
         <div class="photo-card">
-          <img src="alex, elias.png" alt="Alex and Elias">
+          <img src="FISRT DAY SNOW ND.jpg" alt="First snowy day at Notre Dame">
           <div class="photo-text">
-            <h3>Meaningful Connections</h3>
+            <h3>First Snowy Day at Notre Dame</h3>
             <p>
-              The people you meet along the way help make the journey richer, warmer, and unforgettable.
+              A first snowfall, a new season, and one of those unforgettable moments that made
+              Notre Dame feel even more magical.
             </p>
           </div>
         </div>
 
         <div class="photo-card">
-          <img src="yolis y alex.png" alt="Yolis and Alex">
+          <img src="HALL 1.jpg" alt="Hall life">
           <div class="photo-text">
-            <h3>Special Memories</h3>
+            <h3>Hall Life</h3>
             <p>
-              Every smile captured here is a reminder of love, support, and joyful moments shared.
-              Mi niño bellos, Yolenis Bottaro.
+              Everyday moments in the hall became part of the memories, friendships, and routines
+              that made college life so special.
             </p>
           </div>
         </div>
@@ -629,13 +597,21 @@
 
   <section class="section alt">
     <div class="container">
-      <h2>Study, Growth, and the College Journey</h2>
+      <h2>Unforgettable Moments on the Field and Beyond</h2>
       <p class="section-intro">
-        College is built one day at a time — through long hours, quiet effort, commitment,
-        and the resilience to keep moving forward.
+        Some memories stand apart — the kind that capture excitement, pride, adventure,
+        and the spirit of youth lived fully.
       </p>
 
       <div class="image-grid plain-gallery">
+        <img src="ND CHAMPION LEAGUE.jpg" alt="Champion League" class="champion-fix">
+        <img src="LAST TAILGATE.jpg" alt="Last tailgate">
+        <img src="STADIUM GAME.jpg" alt="Stadium game">
+        <img src="ND STADIUM CONCERT.jpg" alt="Stadium concert">
+        <img src="FIRST TRAVEL OUT ND.jpg" alt="First travel out of Notre Dame">
+        <img src="FIRST BACK TO HOME.jpg" alt="First trip back home">
+        <img src="SPAIN TRAVEL.jpg" alt="Spain travel">
+        <img src="SPAIN TRAVEL 1.jpg" alt="Spain travel 1">
         <img src="LIVE STUDY 1.jpg" alt="Study life 1">
         <img src="LIVE STUDY 2.jpg" alt="Study life 2">
         <img src="LIVE STUDY 4.jpg" alt="Study life 4">
@@ -650,28 +626,6 @@
   </section>
 
   <section class="section gold">
-    <div class="container">
-      <h2>Unforgettable Moments on the Field and Beyond</h2>
-      <p class="section-intro">
-        Some memories stand apart — the kind that capture excitement, pride, adventure,
-        and the spirit of youth lived fully.
-      </p>
-
-      <div class="image-grid plain-gallery">
-        <img src="ND CHAMPION LEAGUE.jpg" alt="Champion League">
-        <img src="LAST TAILGATE.jpg" alt="Last tailgate">
-        <img src="STADIUM GAME.jpg" alt="Stadium game">
-        <img src="ND STADIUM CONCERT.jpg" alt="Stadium concert">
-        <img src="FIRST TRAVEL OUT ND.jpg" alt="First travel out of Notre Dame">
-        <img src="FIRST BACK TO HOME.jpg" alt="First trip back home">
-        <img src="SPAIN TRAVEL.jpg" alt="Spain travel">
-        <img src="SPAIN TRAVEL 1.jpg" alt="Spain travel 1">
-        <img src="AWARDS 3.jpg" alt="Award 3">
-      </div>
-    </div>
-  </section>
-
-  <section class="section alt">
     <div class="container">
       <h2>Recognitions and Achievements</h2>
       <p class="section-intro">
@@ -717,7 +671,7 @@
     </div>
   </section>
 
-  <section class="section gold">
+  <section class="section alt">
     <div class="container">
       <h2>A Message from Mom and Dad</h2>
       <div class="message-box">
@@ -743,7 +697,7 @@
     </div>
   </section>
 
-  <section class="section alt">
+  <section class="section gold">
     <div class="container">
       <h2>The Future Begins</h2>
       <p class="section-intro">
