@@ -225,6 +225,11 @@
   padding: 8px;
 }
 
+    .card.zoom img {
+  object-fit: cover;
+  object-position: center;
+  padding: 0;
+}
     .memory-date {
       display: inline-block;
       margin-bottom: 12px;
@@ -460,7 +465,7 @@
   <div class="grid words-love-grid">
 
     <!-- Alex & Elias (PRIMERO) -->
-    <div class="card contain-photo">
+    <div class="card contain-photo zoom">
       <img src="alex-elias.png" alt="Alex and Elias">
       <div class="card-body">
         <h3>A New Chapter Begins</h3>
@@ -475,7 +480,7 @@
     </div>
 
     <!-- Yolis -->
-    <div class="card contain-photo">
+    <div class="card contain-photo zoom">
       <img src="yolis-alex.png" alt="Yolis and Alex">
       <div class="card-body">
         <h3>Mi niño bello</h3>
