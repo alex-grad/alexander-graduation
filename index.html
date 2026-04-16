@@ -561,10 +561,17 @@
 A message from those who love you most
 </p>
 
-<div class="card">
-  <video controls style="width:100%; border-radius: 20px;">
-    <source src="alesofi-video-final.mp4" type="video/mp4">
-  </video>
+<div class="card video-card">
+
+  <div class="video-wrapper">
+    <video id="alesofiVideo" controls style="width:100%; border-radius:20px;">
+      <source src="alesofi-video-final.mp4" type="video/mp4">
+    </video>
+
+    <button class="play-btn" onclick="playVideo()">
+      ▶ Play
+    </button>
+  </div>
 
   <div class="card-body">
     <h3>Family Messages</h3>
@@ -572,6 +579,7 @@ A message from those who love you most
       A collection of love, blessings, and heartfelt congratulations from those who have been part of your journey.
     </p>
   </div>
+
 </div>
 
       <div class="card-body">
