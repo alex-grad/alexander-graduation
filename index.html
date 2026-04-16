@@ -986,8 +986,29 @@ Mom & Dad</p>
   </section>
 
   <footer class="footer">
-    <p>With all our love and pride, celebrating Alexander Bittar — Class of 2026.</p>
-  </footer>
+  <p>With all our love and pride, celebrating Alexander Bittar — Class of 2026.</p>
+</footer>
+
+<script>
+const video = document.getElementById("alesofiVideo");
+const button = document.querySelector(".play-btn");
+
+function playVideo() {
+  video.play();
+}
+
+video.addEventListener("play", () => {
+  button.style.display = "none";
+});
+
+video.addEventListener("pause", () => {
+  button.style.display = "block";
+});
+
+video.addEventListener("ended", () => {
+  button.style.display = "block";
+});
+</script>
 
 </body>
 </html>
