@@ -323,8 +323,26 @@
         padding: 24px;
       }
 
-      .words-love-grid .card img {
+   
+.words-love-grid .card img {
   height: 220px;
+}
+
+}
+
+/* GRADUATION GALLERY */
+.graduation-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.graduation-gallery img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
 /* VIDEO BOTON NETFLIX */
@@ -582,15 +600,7 @@ A message from those who love you most
 
 </div>
 
-      <div class="card-body">
-        <h3>Family Messages</h3>
-        <p>
-          A collection of love, blessings, and heartfelt congratulations from those who have been part of your journey.
-        </p>
-      </div>
-    </div>
-
-  </div>
+        </div>
 </section>
 
   <!-- FIRST YEAR MEMORY -->
@@ -951,8 +961,9 @@ A message from those who love you most
     </div>
   </section>
 
-  <!-- GRADUATION PLACEHOLDERS -->
-  <section class="section">
+ <!-- GRADUATION DAY -->
+
+<section class="section">
   <h2 class="section-title">Graduation Day</h2>
 
   <p class="section-subtitle">
@@ -962,67 +973,123 @@ A message from those who love you most
 
   <div class="graduation-gallery">
 
-    <img src="ALEX1.jpg" alt="Graduation Photo 1">
-    <img src="ALEX2.jpg" alt="Graduation Photo 2">
-    <img src="ALEX3.jpg" alt="Graduation Photo 3">
-    <img src="ALEX4.jpg" alt="Graduation Photo 4">
-    <img src="ALEX5.jpg" alt="Graduation Photo 5">
-    <img src="ALEX6.jpg" alt="Graduation Photo 6">
-    <img src="ALEX7.jpg" alt="Graduation Photo 7">
-    <img src="ALEX8.jpg" alt="Graduation Photo 8">
-    <img src="ALEX9.jpg" alt="Graduation Photo 9">
-    <img src="ALEX10.jpg" alt="Graduation Photo 10">
-    <img src="ALEX11.jpg" alt="Graduation Photo 11">
-    <img src="ALEX12.jpg" alt="Graduation Photo 12">
-    <img src="ALEX13.jpg" alt="Graduation Photo 13">
-    <img src="ALEX14.jpg" alt="Graduation Photo 14">
-    <img src="ALEX15.jpg" alt="Graduation Photo 15">
-    <img src="ALEX16.jpg" alt="Graduation Photo 16">
-    <img src="ALEX17.jpg" alt="Graduation Photo 17">
-    <img src="ALEX18.jpg" alt="Graduation Photo 18">
-    <img src="ALEX19.jpg" alt="Graduation Photo 19">
-    <img src="ALEX20.jpg" alt="Graduation Photo 20">
-    <img src="ALEX21.jpg" alt="Graduation Photo 21">
-    <img src="ALEX22.jpg" alt="Graduation Photo 22">
-    <img src="ALEX23.jpg" alt="Graduation Photo 23">
-    <img src="ALEX24.jpg" alt="Graduation Photo 24">
-    <img src="ALEX25.jpg" alt="Graduation Photo 25">
-    <img src="ALEX26.jpg" alt="Graduation Photo 26">
-    <img src="ALEX27.jpg" alt="Graduation Photo 27">
-    <img src="ALEX28.jpg" alt="Graduation Photo 28">
-    <img src="ALEX29.jpg" alt="Graduation Photo 29">
-    <img src="ALEX30.jpg" alt="Graduation Photo 30">
-    <img src="ALEX31.jpg" alt="Graduation Photo 31">
-    <img src="ALEX32.jpg" alt="Graduation Photo 32">
-    <img src="ALEX33.jpg" alt="Graduation Photo 33">
-    <img src="ALEX34.jpg" alt="Graduation Photo 34">
-    <img src="ALEX35.jpg" alt="Graduation Photo 35">
-    <img src="ALEX36.jpg" alt="Graduation Photo 36">
-    <img src="ALEX37.jpg" alt="Graduation Photo 37">
-    <img src="ALEX38.jpg" alt="Graduation Photo 38">
-    <img src="ALEX39.jpg" alt="Graduation Photo 39">
-    <img src="ALEX40.jpg" alt="Graduation Photo 40">
-    <img src="ALEX41.jpg" alt="Graduation Photo 41">
-    <img src="ALEX42.jpg" alt="Graduation Photo 42">
-    <img src="ALEX43.jpg" alt="Graduation Photo 43">
-    <img src="ALEX44.jpg" alt="Graduation Photo 44">
-    <img src="ALEX45.jpg" alt="Graduation Photo 45">
-    <img src="ALEX46.jpg" alt="Graduation Photo 46">
-    <img src="ALEX47.jpg" alt="Graduation Photo 47">
-    <img src="ALEX48.jpg" alt="Graduation Photo 48">
-    <img src="ALEX49.jpg" alt="Graduation Photo 49">
-    <img src="ALEX50.jpg" alt="Graduation Photo 50">
-    <img src="ALEX51.jpg" alt="Graduation Photo 51">
+<img src="ALEX1.jpg" alt="Graduation Photo 1">
+<img src="ALEX2.jpg" alt="Graduation Photo 2">
+<img src="ALEX3.jpg" alt="Graduation Photo 3">
+<img src="ALEX4.jpg" alt="Graduation Photo 4">
+<img src="ALEX5.jpg" alt="Graduation Photo 5">
+<img src="ALEX6.jpg" alt="Graduation Photo 6">
+<img src="ALEX7.jpg" alt="Graduation Photo 7">
+<img src="ALEX8.jpg" alt="Graduation Photo 8">
+<img src="ALEX9.jpg" alt="Graduation Photo 9">
+<img src="ALEX10.jpg" alt="Graduation Photo 10">
+<img src="ALEX11.jpg" alt="Graduation Photo 11">
+<img src="ALEX12.jpg" alt="Graduation Photo 12">
+<img src="ALEX13.jpg" alt="Graduation Photo 13">
+<img src="ALEX14.jpg" alt="Graduation Photo 14">
+<img src="ALEX15.jpg" alt="Graduation Photo 15">
+<img src="ALEX16.jpg" alt="Graduation Photo 16">
+<img src="ALEX17.jpg" alt="Graduation Photo 17">
+<img src="ALEX18.jpg" alt="Graduation Photo 18">
+<img src="ALEX19.jpg" alt="Graduation Photo 19">
+<img src="ALEX20.jpg" alt="Graduation Photo 20">
+<img src="ALEX21.jpg" alt="Graduation Photo 21">
+<img src="ALEX22.jpg" alt="Graduation Photo 22">
+<img src="ALEX23.jpg" alt="Graduation Photo 23">
+<img src="ALEX24.jpg" alt="Graduation Photo 24">
+<img src="ALEX25.jpg" alt="Graduation Photo 25">
+<img src="ALEX26.jpg" alt="Graduation Photo 26">
+<img src="ALEX27.jpg" alt="Graduation Photo 27">
+<img src="ALEX28.jpg" alt="Graduation Photo 28">
+<img src="ALEX29.jpg" alt="Graduation Photo 29">
+<img src="ALEX30.jpg" alt="Graduation Photo 30">
+<img src="ALEX31.jpg" alt="Graduation Photo 31">
+<img src="ALEX32.jpg" alt="Graduation Photo 32">
+<img src="ALEX33.jpg" alt="Graduation Photo 33">
+<img src="ALEX34.jpg" alt="Graduation Photo 34">
+<img src="ALEX35.jpg" alt="Graduation Photo 35">
+<img src="ALEX36.jpg" alt="Graduation Photo 36">
+<img src="ALEX37.jpg" alt="Graduation Photo 37">
+<img src="ALEX38.jpg" alt="Graduation Photo 38">
+<img src="ALEX39.jpg" alt="Graduation Photo 39">
+<img src="ALEX40.jpg" alt="Graduation Photo 40">
+<img src="ALEX41.jpg" alt="Graduation Photo 41">
+<img src="ALEX42.jpg" alt="Graduation Photo 42">
+<img src="ALEX43.jpg" alt="Graduation Photo 43">
+<img src="ALEX44.jpg" alt="Graduation Photo 44">
+<img src="ALEX45.jpg" alt="Graduation Photo 45">
+<img src="ALEX46.jpg" alt="Graduation Photo 46">
+<img src="ALEX47.jpg" alt="Graduation Photo 47">
+<img src="ALEX48.jpg" alt="Graduation Photo 48">
+<img src="ALEX49.jpg" alt="Graduation Photo 49">
+<img src="ALEX50.jpg" alt="Graduation Photo 50">
+<img src="ALEX51.jpg" alt="Graduation Photo 51">
 
   </div>
 </section>
 
-      <div class="placeholder">
-        <h3>Graduation Video</h3>
-        <p>Add the graduation video here when it is ready.</p>
-      </div>
-    </div>
-  </section>
+<section class="section">
+  <h2 class="section-title">With Gratitude and Love</h2>
+
+  <p class="section-subtitle">
+    A heartfelt thank you to those who were present on this special day and to those who, although unable to attend, celebrated from afar with pride and love.
+  </p>
+
+  <div class="feature-text" style="background:white; border-radius:24px; box-shadow:0 10px 28px rgba(0,0,0,0.08); text-align:center; max-width:1000px; margin:auto; padding:40px;">
+
+<p>
+  With special appreciation to Valeria, whose unconditional friendship has been like that of a sister; Jose, Yolis, Alberto, Cesar Alberto, Yareani, Laura Elena, Daniel, Samuel, Zuley, Tía Mary, and all the family members and loved ones who have supported, encouraged, and believed in Alex through every step of this journey.
+</p>
+
+<br>
+
+<p>
+  Your love, prayers, guidance, and presence—whether near or far—have been part of this achievement.
+</p>
+
+<br>
+
+<p>
+  This celebration belongs to all of you as well.
+</p>
+
+  </div>
+</section>
+
+<section class="section">
+
+  <h2 class="section-title">The Final Goodbye</h2>
+
+  <video controls style="width:100%; border-radius:20px;">
+    <source src="ROOM127-FINAL.mp4" type="video/mp4">
+  </video>
+
+  <div class="feature-text" style="text-align:center; max-width:900px; margin:auto;">
+
+<p>
+  From Room 106, where the Notre Dame journey began, to Room 127, where four remarkable years came full circle, these halls witnessed growth, friendship, challenges, achievements, and countless memories.
+</p>
+
+<br>
+
+<p>
+  As the door closes for the final time, it does not mark an ending, but the beginning of a new chapter filled with purpose, opportunity, and dreams yet to be realized.
+</p>
+
+<br>
+
+<p>
+  Notre Dame will always be part of my story.
+</p>
+
+<br>
+
+<p><strong>Go Irish.</strong></p>
+
+  </div>
+
+</section>
+
 
   <!-- FINAL MESSAGE -->
   <section class="quote-section">
